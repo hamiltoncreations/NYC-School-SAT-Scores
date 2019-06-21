@@ -1,0 +1,6 @@
+framework module Pods_NYC_School_SAT_SCoresUITests {
+  umbrella header "Pods-NYC School SAT SCoresUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

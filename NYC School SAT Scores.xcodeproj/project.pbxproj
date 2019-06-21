@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462D6BC222B31A1D00A7681D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D6BC122B31A1D00A7681D /* AppDelegate.swift */; };
+		462D6BC722B31A1D00A7681D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462D6BC522B31A1D00A7681D /* Main.storyboard */; };
+		462D6BC922B31A1E00A7681D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462D6BC822B31A1E00A7681D /* Assets.xcassets */; };
+		462D6BCC22B31A1E00A7681D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462D6BCA22B31A1E00A7681D /* LaunchScreen.storyboard */; };
+		462D6BD722B31A1F00A7681D /* SchoolInfoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D6BD622B31A1F00A7681D /* SchoolInfoViewModelTests.swift */; };
+		462D6BF122B31C5C00A7681D /* SchoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D6BF022B31C5C00A7681D /* SchoolInfo.swift */; };
+		462D6BF322B3240100A7681D /* SATData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D6BF222B3240100A7681D /* SATData.swift */; };
+		465A2F5622B6ED4A000EBCE1 /* AlamoFireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F5522B6ED4A000EBCE1 /* AlamoFireWrapper.swift */; };
+		465A2F5A22B809B1000EBCE1 /* AlertWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F5922B809B1000EBCE1 /* AlertWrapper.swift */; };
+		465A2F5C22BAF5CE000EBCE1 /* AlamoFireWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F5B22BAF5CE000EBCE1 /* AlamoFireWrapperTests.swift */; };
+		465A2F5E22BAF600000EBCE1 /* SchoolListTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F5D22BAF600000EBCE1 /* SchoolListTableViewControllerTests.swift */; };
+		465A2F6022BAF617000EBCE1 /* SchoolInfoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F5F22BAF617000EBCE1 /* SchoolInfoViewControllerTests.swift */; };
+		465A2F6222BAF65E000EBCE1 /* SATDataViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F6122BAF65E000EBCE1 /* SATDataViewModelTests.swift */; };
+		465A2F6422BAF672000EBCE1 /* SchoolListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F6322BAF672000EBCE1 /* SchoolListViewModelTests.swift */; };
+		465A2F6822BB24CE000EBCE1 /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F6722BB24CE000EBCE1 /* MockConstants.swift */; };
+		465A2F6C22BB2986000EBCE1 /* NYCOpenAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F6B22BB2986000EBCE1 /* NYCOpenAPIService.swift */; };
+		465A2F6E22BBBEE8000EBCE1 /* NYCOpenAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F6D22BBBEE8000EBCE1 /* NYCOpenAPIServiceTests.swift */; };
+		465A2F7022BC7BFC000EBCE1 /* MockUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A2F6F22BC7BFC000EBCE1 /* MockUtilities.swift */; };
+		46F4B47022B55228000AD218 /* SchoolInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B46F22B55228000AD218 /* SchoolInfoViewModel.swift */; };
+		46F4B47222B55483000AD218 /* SATDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B47122B55483000AD218 /* SATDataViewModel.swift */; };
+		46F4B47422B55498000AD218 /* SchoolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B47322B55498000AD218 /* SchoolListViewModel.swift */; };
+		46F4B47722B55F28000AD218 /* SchoolListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B47622B55F28000AD218 /* SchoolListTableViewController.swift */; };
+		46F4B47922B58F3D000AD218 /* SchoolInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B47822B58F3D000AD218 /* SchoolInfoViewController.swift */; };
+		86AACF7C2D5B2E4F17F9A48C /* Pods_NYC_School_SAT_SCoresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3104969833FAD76350500904 /* Pods_NYC_School_SAT_SCoresUITests.framework */; };
+		9DAF413C397B5FDF4ED62737 /* Pods_NYC_School_SAT_SCores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68639F69436551A207C3DFC1 /* Pods_NYC_School_SAT_SCores.framework */; };
+		A2D5607AEE2BDA7E3175F553 /* Pods_NYC_School_SAT_SCoresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47A237D49A39E9019BA8B3D /* Pods_NYC_School_SAT_SCoresTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		462D6BD322B31A1F00A7681D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 462D6BB622B31A1D00A7681D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462D6BBD22B31A1D00A7681D;
+			remoteInfo = "NYC School SAT SCores";
+		};
+		462D6BDE22B31A1F00A7681D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 462D6BB622B31A1D00A7681D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462D6BBD22B31A1D00A7681D;
+			remoteInfo = "NYC School SAT SCores";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D2672691E10AA7F8DE5A864 /* Pods-NYC School SAT SCoresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC School SAT SCoresTests.debug.xcconfig"; path = "Target Support Files/Pods-NYC School SAT SCoresTests/Pods-NYC School SAT SCoresTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3104969833FAD76350500904 /* Pods_NYC_School_SAT_SCoresUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_School_SAT_SCoresUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B704AE3911EA9AB4375B3F /* Pods-NYC School SAT SCoresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC School SAT SCoresUITests.debug.xcconfig"; path = "Target Support Files/Pods-NYC School SAT SCoresUITests/Pods-NYC School SAT SCoresUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4213E0FFEC51FE821443E120 /* Pods-NYC School SAT SCoresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC School SAT SCoresTests.release.xcconfig"; path = "Target Support Files/Pods-NYC School SAT SCoresTests/Pods-NYC School SAT SCoresTests.release.xcconfig"; sourceTree = "<group>"; };
+		462D6BBE22B31A1D00A7681D /* NYC School SAT SCores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYC School SAT SCores.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		462D6BC122B31A1D00A7681D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		462D6BC622B31A1D00A7681D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		462D6BC822B31A1E00A7681D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		462D6BCB22B31A1E00A7681D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		462D6BCD22B31A1E00A7681D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462D6BD222B31A1F00A7681D /* NYC School SAT SCoresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYC School SAT SCoresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		462D6BD622B31A1F00A7681D /* SchoolInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewModelTests.swift; sourceTree = "<group>"; };
+		462D6BD822B31A1F00A7681D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462D6BDD22B31A1F00A7681D /* NYC School SAT SCoresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYC School SAT SCoresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		462D6BF022B31C5C00A7681D /* SchoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
+		462D6BF222B3240100A7681D /* SATData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATData.swift; sourceTree = "<group>"; };
+		465A2F5522B6ED4A000EBCE1 /* AlamoFireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireWrapper.swift; sourceTree = "<group>"; };
+		465A2F5922B809B1000EBCE1 /* AlertWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWrapper.swift; sourceTree = "<group>"; };
+		465A2F5B22BAF5CE000EBCE1 /* AlamoFireWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireWrapperTests.swift; sourceTree = "<group>"; };
+		465A2F5D22BAF600000EBCE1 /* SchoolListTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListTableViewControllerTests.swift; sourceTree = "<group>"; };
+		465A2F5F22BAF617000EBCE1 /* SchoolInfoViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewControllerTests.swift; sourceTree = "<group>"; };
+		465A2F6122BAF65E000EBCE1 /* SATDataViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATDataViewModelTests.swift; sourceTree = "<group>"; };
+		465A2F6322BAF672000EBCE1 /* SchoolListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewModelTests.swift; sourceTree = "<group>"; };
+		465A2F6722BB24CE000EBCE1 /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
+		465A2F6B22BB2986000EBCE1 /* NYCOpenAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCOpenAPIService.swift; sourceTree = "<group>"; };
+		465A2F6D22BBBEE8000EBCE1 /* NYCOpenAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCOpenAPIServiceTests.swift; sourceTree = "<group>"; };
+		465A2F6F22BC7BFC000EBCE1 /* MockUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUtilities.swift; sourceTree = "<group>"; };
+		46F4B46F22B55228000AD218 /* SchoolInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewModel.swift; sourceTree = "<group>"; };
+		46F4B47122B55483000AD218 /* SATDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATDataViewModel.swift; sourceTree = "<group>"; };
+		46F4B47322B55498000AD218 /* SchoolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewModel.swift; sourceTree = "<group>"; };
+		46F4B47622B55F28000AD218 /* SchoolListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListTableViewController.swift; sourceTree = "<group>"; };
+		46F4B47822B58F3D000AD218 /* SchoolInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewController.swift; sourceTree = "<group>"; };
+		68639F69436551A207C3DFC1 /* Pods_NYC_School_SAT_SCores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_School_SAT_SCores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDB03E6D0A0053E4B75EF27 /* Pods-NYC School SAT SCoresUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC School SAT SCoresUITests.release.xcconfig"; path = "Target Support Files/Pods-NYC School SAT SCoresUITests/Pods-NYC School SAT SCoresUITests.release.xcconfig"; sourceTree = "<group>"; };
+		822E8639BA6308FA1A7AB259 /* Pods-NYC School SAT SCores.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC School SAT SCores.debug.xcconfig"; path = "Target Support Files/Pods-NYC School SAT SCores/Pods-NYC School SAT SCores.debug.xcconfig"; sourceTree = "<group>"; };
+		DD370922122E985299B8BF7A /* Pods-NYC School SAT SCores.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC School SAT SCores.release.xcconfig"; path = "Target Support Files/Pods-NYC School SAT SCores/Pods-NYC School SAT SCores.release.xcconfig"; sourceTree = "<group>"; };
+		F47A237D49A39E9019BA8B3D /* Pods_NYC_School_SAT_SCoresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_School_SAT_SCoresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		462D6BBB22B31A1D00A7681D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAF413C397B5FDF4ED62737 /* Pods_NYC_School_SAT_SCores.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462D6BCF22B31A1E00A7681D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D5607AEE2BDA7E3175F553 /* Pods_NYC_School_SAT_SCoresTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462D6BDA22B31A1F00A7681D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AACF7C2D5B2E4F17F9A48C /* Pods_NYC_School_SAT_SCoresUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A78B574C284CCDEC0FAF02E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68639F69436551A207C3DFC1 /* Pods_NYC_School_SAT_SCores.framework */,
+				F47A237D49A39E9019BA8B3D /* Pods_NYC_School_SAT_SCoresTests.framework */,
+				3104969833FAD76350500904 /* Pods_NYC_School_SAT_SCoresUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		462D6BB522B31A1D00A7681D = {
+			isa = PBXGroup;
+			children = (
+				462D6BC022B31A1D00A7681D /* NYC School SAT Scores */,
+				462D6BD522B31A1F00A7681D /* NYC School SAT ScoresTests */,
+				462D6BBF22B31A1D00A7681D /* Products */,
+				C708931BA387BB8F3EF87850 /* Pods */,
+				1A78B574C284CCDEC0FAF02E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		462D6BBF22B31A1D00A7681D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				462D6BBE22B31A1D00A7681D /* NYC School SAT SCores.app */,
+				462D6BD222B31A1F00A7681D /* NYC School SAT SCoresTests.xctest */,
+				462D6BDD22B31A1F00A7681D /* NYC School SAT SCoresUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		462D6BC022B31A1D00A7681D /* NYC School SAT Scores */ = {
+			isa = PBXGroup;
+			children = (
+				465A2F5422B6ECC2000EBCE1 /* Utility */,
+				46F4B47522B55E9C000AD218 /* ViewControllers */,
+				46F4B46E22B551B6000AD218 /* ViewModels */,
+				462D6BEF22B31BFE00A7681D /* Models */,
+				462D6BC122B31A1D00A7681D /* AppDelegate.swift */,
+				462D6BC522B31A1D00A7681D /* Main.storyboard */,
+				462D6BC822B31A1E00A7681D /* Assets.xcassets */,
+				462D6BCA22B31A1E00A7681D /* LaunchScreen.storyboard */,
+				462D6BCD22B31A1E00A7681D /* Info.plist */,
+			);
+			path = "NYC School SAT Scores";
+			sourceTree = "<group>";
+		};
+		462D6BD522B31A1F00A7681D /* NYC School SAT ScoresTests */ = {
+			isa = PBXGroup;
+			children = (
+				465A2F6622BB2499000EBCE1 /* SharedMock */,
+				462D6BD822B31A1F00A7681D /* Info.plist */,
+				465A2F5B22BAF5CE000EBCE1 /* AlamoFireWrapperTests.swift */,
+				465A2F6D22BBBEE8000EBCE1 /* NYCOpenAPIServiceTests.swift */,
+				462D6BD622B31A1F00A7681D /* SchoolInfoViewModelTests.swift */,
+				465A2F6122BAF65E000EBCE1 /* SATDataViewModelTests.swift */,
+				465A2F6322BAF672000EBCE1 /* SchoolListViewModelTests.swift */,
+				465A2F5D22BAF600000EBCE1 /* SchoolListTableViewControllerTests.swift */,
+				465A2F5F22BAF617000EBCE1 /* SchoolInfoViewControllerTests.swift */,
+			);
+			path = "NYC School SAT ScoresTests";
+			sourceTree = "<group>";
+		};
+		462D6BEF22B31BFE00A7681D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				462D6BF022B31C5C00A7681D /* SchoolInfo.swift */,
+				462D6BF222B3240100A7681D /* SATData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		465A2F5422B6ECC2000EBCE1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				465A2F5522B6ED4A000EBCE1 /* AlamoFireWrapper.swift */,
+				465A2F5922B809B1000EBCE1 /* AlertWrapper.swift */,
+				465A2F6B22BB2986000EBCE1 /* NYCOpenAPIService.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		465A2F6622BB2499000EBCE1 /* SharedMock */ = {
+			isa = PBXGroup;
+			children = (
+				465A2F6722BB24CE000EBCE1 /* MockConstants.swift */,
+				465A2F6F22BC7BFC000EBCE1 /* MockUtilities.swift */,
+			);
+			path = SharedMock;
+			sourceTree = "<group>";
+		};
+		46F4B46E22B551B6000AD218 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				46F4B46F22B55228000AD218 /* SchoolInfoViewModel.swift */,
+				46F4B47122B55483000AD218 /* SATDataViewModel.swift */,
+				46F4B47322B55498000AD218 /* SchoolListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		46F4B47522B55E9C000AD218 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46F4B47622B55F28000AD218 /* SchoolListTableViewController.swift */,
+				46F4B47822B58F3D000AD218 /* SchoolInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C708931BA387BB8F3EF87850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				822E8639BA6308FA1A7AB259 /* Pods-NYC School SAT SCores.debug.xcconfig */,
+				DD370922122E985299B8BF7A /* Pods-NYC School SAT SCores.release.xcconfig */,
+				0D2672691E10AA7F8DE5A864 /* Pods-NYC School SAT SCoresTests.debug.xcconfig */,
+				4213E0FFEC51FE821443E120 /* Pods-NYC School SAT SCoresTests.release.xcconfig */,
+				33B704AE3911EA9AB4375B3F /* Pods-NYC School SAT SCoresUITests.debug.xcconfig */,
+				7BDB03E6D0A0053E4B75EF27 /* Pods-NYC School SAT SCoresUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		462D6BBD22B31A1D00A7681D /* NYC School SAT SCores */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462D6BE622B31A1F00A7681D /* Build configuration list for PBXNativeTarget "NYC School SAT SCores" */;
+			buildPhases = (
+				72DC791EDA60ADBF389940C6 /* [CP] Check Pods Manifest.lock */,
+				462D6BBA22B31A1D00A7681D /* Sources */,
+				462D6BBB22B31A1D00A7681D /* Frameworks */,
+				462D6BBC22B31A1D00A7681D /* Resources */,
+				F17D92AD048D59BEEE79193A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYC School SAT SCores";
+			productName = "NYC School SAT SCores";
+			productReference = 462D6BBE22B31A1D00A7681D /* NYC School SAT SCores.app */;
+			productType = "com.apple.product-type.application";
+		};
+		462D6BD122B31A1E00A7681D /* NYC School SAT SCoresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462D6BE922B31A1F00A7681D /* Build configuration list for PBXNativeTarget "NYC School SAT SCoresTests" */;
+			buildPhases = (
+				853663DF3E3E61BD342D8E33 /* [CP] Check Pods Manifest.lock */,
+				462D6BCE22B31A1E00A7681D /* Sources */,
+				462D6BCF22B31A1E00A7681D /* Frameworks */,
+				462D6BD022B31A1E00A7681D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				462D6BD422B31A1F00A7681D /* PBXTargetDependency */,
+			);
+			name = "NYC School SAT SCoresTests";
+			productName = "NYC School SAT SCoresTests";
+			productReference = 462D6BD222B31A1F00A7681D /* NYC School SAT SCoresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		462D6BDC22B31A1F00A7681D /* NYC School SAT SCoresUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462D6BEC22B31A1F00A7681D /* Build configuration list for PBXNativeTarget "NYC School SAT SCoresUITests" */;
+			buildPhases = (
+				538B1AE99322B6F6697CFE50 /* [CP] Check Pods Manifest.lock */,
+				462D6BD922B31A1F00A7681D /* Sources */,
+				462D6BDA22B31A1F00A7681D /* Frameworks */,
+				462D6BDB22B31A1F00A7681D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				462D6BDF22B31A1F00A7681D /* PBXTargetDependency */,
+			);
+			name = "NYC School SAT SCoresUITests";
+			productName = "NYC School SAT SCoresUITests";
+			productReference = 462D6BDD22B31A1F00A7681D /* NYC School SAT SCoresUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		462D6BB622B31A1D00A7681D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = mhamilton;
+				TargetAttributes = {
+					462D6BBD22B31A1D00A7681D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					462D6BD122B31A1E00A7681D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 462D6BBD22B31A1D00A7681D;
+					};
+					462D6BDC22B31A1F00A7681D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 462D6BBD22B31A1D00A7681D;
+					};
+				};
+			};
+			buildConfigurationList = 462D6BB922B31A1D00A7681D /* Build configuration list for PBXProject "NYC School SAT Scores" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 462D6BB522B31A1D00A7681D;
+			productRefGroup = 462D6BBF22B31A1D00A7681D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				462D6BBD22B31A1D00A7681D /* NYC School SAT SCores */,
+				462D6BD122B31A1E00A7681D /* NYC School SAT SCoresTests */,
+				462D6BDC22B31A1F00A7681D /* NYC School SAT SCoresUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		462D6BBC22B31A1D00A7681D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462D6BCC22B31A1E00A7681D /* LaunchScreen.storyboard in Resources */,
+				462D6BC922B31A1E00A7681D /* Assets.xcassets in Resources */,
+				462D6BC722B31A1D00A7681D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462D6BD022B31A1E00A7681D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462D6BDB22B31A1F00A7681D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		538B1AE99322B6F6697CFE50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC School SAT SCoresUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72DC791EDA60ADBF389940C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC School SAT SCores-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853663DF3E3E61BD342D8E33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC School SAT SCoresTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17D92AD048D59BEEE79193A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYC School SAT SCores/Pods-NYC School SAT SCores-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYC School SAT SCores/Pods-NYC School SAT SCores-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		462D6BBA22B31A1D00A7681D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465A2F5622B6ED4A000EBCE1 /* AlamoFireWrapper.swift in Sources */,
+				462D6BF122B31C5C00A7681D /* SchoolInfo.swift in Sources */,
+				462D6BC222B31A1D00A7681D /* AppDelegate.swift in Sources */,
+				46F4B47922B58F3D000AD218 /* SchoolInfoViewController.swift in Sources */,
+				46F4B47722B55F28000AD218 /* SchoolListTableViewController.swift in Sources */,
+				462D6BF322B3240100A7681D /* SATData.swift in Sources */,
+				465A2F5A22B809B1000EBCE1 /* AlertWrapper.swift in Sources */,
+				465A2F6C22BB2986000EBCE1 /* NYCOpenAPIService.swift in Sources */,
+				46F4B47422B55498000AD218 /* SchoolListViewModel.swift in Sources */,
+				46F4B47222B55483000AD218 /* SATDataViewModel.swift in Sources */,
+				46F4B47022B55228000AD218 /* SchoolInfoViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462D6BCE22B31A1E00A7681D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465A2F6822BB24CE000EBCE1 /* MockConstants.swift in Sources */,
+				465A2F6E22BBBEE8000EBCE1 /* NYCOpenAPIServiceTests.swift in Sources */,
+				465A2F6022BAF617000EBCE1 /* SchoolInfoViewControllerTests.swift in Sources */,
+				465A2F6222BAF65E000EBCE1 /* SATDataViewModelTests.swift in Sources */,
+				465A2F6422BAF672000EBCE1 /* SchoolListViewModelTests.swift in Sources */,
+				465A2F7022BC7BFC000EBCE1 /* MockUtilities.swift in Sources */,
+				465A2F5C22BAF5CE000EBCE1 /* AlamoFireWrapperTests.swift in Sources */,
+				465A2F5E22BAF600000EBCE1 /* SchoolListTableViewControllerTests.swift in Sources */,
+				462D6BD722B31A1F00A7681D /* SchoolInfoViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462D6BD922B31A1F00A7681D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		462D6BD422B31A1F00A7681D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462D6BBD22B31A1D00A7681D /* NYC School SAT SCores */;
+			targetProxy = 462D6BD322B31A1F00A7681D /* PBXContainerItemProxy */;
+		};
+		462D6BDF22B31A1F00A7681D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462D6BBD22B31A1D00A7681D /* NYC School SAT SCores */;
+			targetProxy = 462D6BDE22B31A1F00A7681D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		462D6BC522B31A1D00A7681D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462D6BC622B31A1D00A7681D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		462D6BCA22B31A1E00A7681D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462D6BCB22B31A1E00A7681D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		462D6BE422B31A1F00A7681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		462D6BE522B31A1F00A7681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		462D6BE722B31A1F00A7681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822E8639BA6308FA1A7AB259 /* Pods-NYC School SAT SCores.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXY8X7ZTNG;
+				INFOPLIST_FILE = "NYC School SAT SCores/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhamilton.NYC-School-SAT-Scores";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		462D6BE822B31A1F00A7681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD370922122E985299B8BF7A /* Pods-NYC School SAT SCores.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXY8X7ZTNG;
+				INFOPLIST_FILE = "NYC School SAT SCores/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhamilton.NYC-School-SAT-Scores";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		462D6BEA22B31A1F00A7681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2672691E10AA7F8DE5A864 /* Pods-NYC School SAT SCoresTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXY8X7ZTNG;
+				INFOPLIST_FILE = "NYC School SAT SCoresTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhamilton.NYC-School-SAT-SCoresTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYC School SAT SCores.app/NYC School SAT SCores";
+			};
+			name = Debug;
+		};
+		462D6BEB22B31A1F00A7681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4213E0FFEC51FE821443E120 /* Pods-NYC School SAT SCoresTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXY8X7ZTNG;
+				INFOPLIST_FILE = "NYC School SAT SCoresTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhamilton.NYC-School-SAT-SCoresTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYC School SAT SCores.app/NYC School SAT SCores";
+			};
+			name = Release;
+		};
+		462D6BED22B31A1F00A7681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33B704AE3911EA9AB4375B3F /* Pods-NYC School SAT SCoresUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXY8X7ZTNG;
+				INFOPLIST_FILE = "NYC School SAT SCoresUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhamilton.NYC-School-SAT-SCoresUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NYC School SAT SCores";
+			};
+			name = Debug;
+		};
+		462D6BEE22B31A1F00A7681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDB03E6D0A0053E4B75EF27 /* Pods-NYC School SAT SCoresUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXY8X7ZTNG;
+				INFOPLIST_FILE = "NYC School SAT SCoresUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhamilton.NYC-School-SAT-SCoresUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NYC School SAT SCores";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		462D6BB922B31A1D00A7681D /* Build configuration list for PBXProject "NYC School SAT Scores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462D6BE422B31A1F00A7681D /* Debug */,
+				462D6BE522B31A1F00A7681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462D6BE622B31A1F00A7681D /* Build configuration list for PBXNativeTarget "NYC School SAT SCores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462D6BE722B31A1F00A7681D /* Debug */,
+				462D6BE822B31A1F00A7681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462D6BE922B31A1F00A7681D /* Build configuration list for PBXNativeTarget "NYC School SAT SCoresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462D6BEA22B31A1F00A7681D /* Debug */,
+				462D6BEB22B31A1F00A7681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462D6BEC22B31A1F00A7681D /* Build configuration list for PBXNativeTarget "NYC School SAT SCoresUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462D6BED22B31A1F00A7681D /* Debug */,
+				462D6BEE22B31A1F00A7681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 462D6BB622B31A1D00A7681D /* Project object */;
+}
